@@ -38,7 +38,7 @@ export class EducationComponent implements OnInit {
   ngOnInit(): void {
     this.planeIcon=awesom.faPlane;
     this.gameIcon=awesom.faGamepad;
-    this.volleyBallIcon=awesom.faVolleyballBall;
+    this.volleyBallIcon=awesom.faTableTennis;
   }
 
 }
