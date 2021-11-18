@@ -12,6 +12,9 @@ import { HeaderComponent } from './header/header.component';
 import { ReferencesComponent } from './references/references.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MessageService } from './services/message.service';
 
 
 @NgModule({
@@ -29,9 +32,11 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
